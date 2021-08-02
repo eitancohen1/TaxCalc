@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+<title>מחשבון מע"מ</title>
+
+</head>
+
+
+
+<body dir="rtl">
+<center>
+    <div class ="form">
+            <h2> מחשבון מע"מ</h5>
+            <form name="orderform" id="orderform">
+            <table>
+    </div>
+      <tr><th>
+       <label>מחיר ללא מע"מ </label>
+      </th>
+      <th scope="row">
+       <div align="right">
+        <label><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₪</span></label>
+        <input name="price" type="text" id="price" size="10">
+        
+        
+       </div>
+      </th>
+    
+      
+      <tr><th>
+       <label>כמות  המוצרים</label>
+      </th>
+      <th scope="row">
+       <div align="right">
+        <label><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#</span></label>
+        <input name="quantity" type="text" id="quantity" size="10">
+       </div>
+      </th>
+
+      <tr><th>
+        <label>מע"מ</label>
+       </th>
+       <th scope="row">
+        <div align="right">
+         <label><span>&nbsp;&nbsp;&nbsp;&nbsp;%</span></label>
+         <input name="taxlevel" type="text" id="taxlevel" size="10">
+        </div>
+       </th>
+     
+      <tr><th>
+       <label>סה"כ ללא מע"מ</label>
+      </th>
+      <th scope="row">   
+       <div align="right">
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₪</label>
+        <input name="subtotal" type="text" id="subtotal" onFocus="this.form.elements[1].focus()" size="10"> &nbsp;
+        
+       </div>
+      </th>
+     </tr>
+      
+       <tr><th>
+       <label>מע"מ </label>
+      </th>
+       <th scope="row">
+       <div align="right">
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₪</label>
+         <input name="salestax" type="text" id="salestax" onFocus="this.form.elements[1].focus()" size="10">&nbsp;&nbsp;   
+           
+       </div>
+      </th>
+     </tr>
+     
+      <tr><th>
+       <label>סה"כ כולל מע"מ</label>
+      </th>
+      <th scope="row">
+       <div align="right">
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₪</label>
+        <input name="gtotal" type="text" id="gtotal" onFocus="this.form.elements[2].focus()" size="10"> &nbsp;
+        <input name="gtotalBtn" onClick="grandTotal();" type="button" id="gtotalBtn" value="בצע">
+       </div>
+      </th>
+     </tr>
+    </table>
+    </form>      
+    </div>
+    </center>
+</body>
+<script src="script.js"></script>
+
+    </html>
